@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MirrorTech Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MirrorTech Pro</h1>
+        <p class="slogan">Transform your reflection, Elevate your life.</p>
+    </header>
+    
+    <section class="product-info">
+        <h2>About MirrorTech Pro</h2>
+        <img src="mirror.png" alt="MirrorTech Pro" class="product-image">
+        <p>The MirrorTech Pro – your ultimate companion for fashion and fitness. This innovative smart mirror not only helps you visualize outfits with stunning clarity but also provides personalized gym courses to enhance your workout experience. Elevate your style and fitness routine effortlessly with the MirrorTech Pro.</p>
+        <p class="price">Price: 1200 RM</p>
+        <a href="#order-form" class="order-button">Order Now</a>
+    </section>
+
+    <section id="order-form" class="order-form">
+        <h2>Order Your MirrorTech Pro</h2>
+        <form id="orderForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Shipping Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MirrorTech. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your order! We will contact you soon.');
+            document.getElementById('orderForm').reset();
+        });
+    </script>
+</body>
+</html>
